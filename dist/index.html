@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="images/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link href="output.css" rel="stylesheet" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body
+    class="font-outfit flex flex-col gap-10 justify-center p-6 h-[100vh] bg-very-dark-blue-main"
+  >
+    <main>
+      <figure
+        class="text-white shadow-2xl bg-very-dark-blue-card flex flex-col gap-5 p-6 rounded-xl max-w-xs mx-auto"
+      >
+        <div class="relative group hover:cursor-pointer">
+          <img
+            alt="Equilibrium"
+            class="rounded-lg"
+            src="images/image-equilibrium.jpg"
+          />
+          <span
+            class="absolute top-0 left-0 transition-all duration-300 rounded-lg opacity-0 group-hover:opacity-50 bg-cyan w-full h-full"
+          >
+          </span>
+          <img
+            alt="View"
+            class="absolute top-1/2 left-1/2 transition-all duration-300 transform opacity-0 group-hover:opacity-100 -translate-x-1/2 -translate-y-1/2 z-2"
+            src="images/icon-view.svg"
+          />
+        </div>
+        <figcaption>
+          <div
+            class="flex flex-col gap-4 border-b pb-4 border-b-very-dark-blue-line"
+          >
+            <h1
+              class="text-xl font-bold hover:text-cyan hover:cursor-pointer transition-all duration-300"
+            >
+              Equilibrium #3429
+            </h1>
+            <p class="text-soft-blue">
+              Our Equilibrium collection promotes balance and calm.
+            </p>
+            <div class="flex justify-between text-[15px]">
+              <div class="flex gap-2 items-center">
+                <img alt="Ethereum icon" src="images/icon-ethereum.svg" />
+                <span class="text-cyan">0.041 ETH</span>
+              </div>
+              <div class="flex gap-2 items-center">
+                <img alt="Ethereum icon" src="images/icon-clock.svg" />
+                <span class="text-soft-blue">3 days left</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex text-soft-blue items-center gap-3 pt-4 text-sm">
+            <img
+              alt="Avatar"
+              class="h-8 border border-white rounded-full"
+              src="images/image-avatar.png"
+            />
+            <p>
+              Creation of
+              <span
+                class="text-white hover:text-cyan hover:cursor-pointer transition-all duration-300"
+                >Jules Wyvern</span
+              >
+            </p>
+          </div>
+        </figcaption>
+      </figure>
+    </main>
+    <footer>
+      <div class="text-center flex flex-col text-sm text-gray-300">
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Challenge by Frontend Mentor.
+        </a>
+        <a
+          href="https://www.frontendmentor.io/profile/robertzinBOSS"
+          rel="noopener"
+          target="_blank"
+          >Coded by
+          <em class="cursor-pointer underline">Roberto Llontop</em>.</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
